@@ -1,14 +1,23 @@
 package gameLogic;
+import java.util.Scanner;
 
 
 public class HumanPlayer extends Player
 {
+    private Scanner in;
     private int[] selectedMove;
 
-    public HumanPlayer ( String name, Mark mark)
+    public HumanPlayer ( String name, Mark mark, Scanner in)
+    {
+        super(name, mark);
+        this.in = in;
+    }
+
+    public HumanPlayer (String name, Mark mark)
     {
         super(name, mark);
     }
+
 
     // Selected move from UI
     public void setSelectedMove(int row, int col) {
