@@ -1,3 +1,5 @@
+package gameLogic;
+
 public class Game {
     private final Board board = new Board();
     private final Player p1;
