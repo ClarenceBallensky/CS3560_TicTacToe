@@ -5,8 +5,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-// Used to launch the game
-// Must be run with Maven!!!
+// Sets up window
 public class GameApplication extends Application {
     public static void main(String[] args) {
         launch(args);

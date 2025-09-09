@@ -10,6 +10,6 @@ public enum Mark
            case X -> "X";
            case O -> "O";
            case EMPTY -> " ";
-        }
+        };
     }
 }

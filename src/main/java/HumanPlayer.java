@@ -15,7 +15,7 @@ public class HumanPlayer extends Player
     {
         while (true)
         {
-            System.outprintf("%s (%s), enter row and col [1-3 1-3]: ", name, mark);
+            System.out.printf("%s (%s), enter row and col [1-3 1-3]: ", name, mark);
             int r = in.nextInt() - 1;
             int c = in.nextInt() - 1;
             if ( board.isEmpty (r, c) )

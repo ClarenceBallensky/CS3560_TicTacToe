@@ -13,7 +13,7 @@ public class Board
 
     public boolean isEmpty ( int r, int c )
     {
-        return grid[r][c] == MARK.EMPTY;
+        return grid[r][c] == Mark.EMPTY;
     }
 
     public boolean place ( int r, int c, Mark mark )
