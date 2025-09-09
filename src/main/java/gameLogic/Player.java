@@ -1,3 +1,5 @@
+package gameLogic;
+
 public abstract class Player
 {
     protected final String name;

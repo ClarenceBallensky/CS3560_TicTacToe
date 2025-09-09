@@ -1,3 +1,5 @@
+package gameLogic;
+
 public class RandomAIPlayer extends Player {
     private final MoveStrategy strategy;
 
