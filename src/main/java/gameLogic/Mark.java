@@ -1,3 +1,5 @@
+package gameLogic;
+
 public enum Mark
 {
     X, O, EMPTY;

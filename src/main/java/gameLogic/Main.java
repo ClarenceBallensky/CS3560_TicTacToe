@@ -1,3 +1,5 @@
+package gameLogic;
+
 import java.util.Scanner;
 
 public class Main

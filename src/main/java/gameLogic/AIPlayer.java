@@ -1,3 +1,5 @@
+package gameLogic;
+
 public class AIPlayer extends Player
 {
     private final MoveStrategy strategy;
