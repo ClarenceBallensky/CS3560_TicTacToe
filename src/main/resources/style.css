@@ -1,0 +1,39 @@
+.root{
+    -fx-background-color: #31353D;
+}
+.button{
+    -fx-background-color: #31353D;
+    -fx-border-color: #ACF0F2;
+}
+
+/* Board borders */
+#cell0{
+    -fx-border-width: 0 1px 1px 0; /* top right bottom left */
+}
+#cell1{
+    -fx-border-width: 0 1 1 1;
+}
+#cell2{
+    -fx-border-width: 0 0 1 1;
+}
+#cell3{
+    -fx-border-width: 1 1 1 0;
+}
+#cell5{
+    -fx-border-width: 1 0 1 1;
+}
+#cell6{
+    -fx-border-width: 1 1 0 0;
+}
+#cell7{
+    -fx-border-width: 1 1 0 1;
+}
+#cell8{
+    -fx-border-width: 1 0 0 1;
+}
+
+#play{
+    -fx-border-color: #ffad75;
+    -fx-text-fill: #ffad75;
+}
+

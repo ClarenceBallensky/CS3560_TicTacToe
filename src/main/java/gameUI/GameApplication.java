@@ -17,6 +17,9 @@ public class GameApplication extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("/BoardView.fxml"));
         Scene scene = new Scene(root);
 
+        // Apply CSS stylesheet
+        scene.getStylesheets().add(getClass().getResource("/style.css").toExternalForm());
+
 
         stage.setResizable(false);  // Window cannot be resized for consistency
         stage.setTitle("Tic-Tac-Toe");
