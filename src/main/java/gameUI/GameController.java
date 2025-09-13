@@ -17,9 +17,9 @@ public class GameController{
     @FXML
     private Button play;
 
-    private Board board = new Board();
-    private HumanPlayer humanPlayer = new HumanPlayer("Human", Mark.X);
-    private AIPlayer ai = new AIPlayer("Computer", Mark.O, new RandomStrategy());;
+    private final Board board = new Board();
+    private final HumanPlayer humanPlayer = new HumanPlayer("Human", Mark.X);
+    private final AIPlayer ai = new AIPlayer("Computer", Mark.O, new RandomStrategy());
     private Player current = null;
 
     @FXML

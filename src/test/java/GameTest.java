@@ -1,6 +1,14 @@
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
+import gameLogic.Mark;
+import gameLogic.Board;
+import gameLogic.Player;
+import gameLogic.AIPlayer;
+import gameLogic.Game;
+import gameLogic.MoveStrategy;
+
+
 public class GameTest
 {
     static class FixedMoveStrategy implements MoveStrategy

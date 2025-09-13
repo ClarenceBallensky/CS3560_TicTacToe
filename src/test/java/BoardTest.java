@@ -1,6 +1,9 @@
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
+import gameLogic.Board;
+import gameLogic.Mark;
+
 public class BoardTest {
 
     //makes sure board is empty at the start of the game
@@ -28,15 +31,6 @@ public class BoardTest {
         Board board = new Board();
         board.place(0, 0, Mark.X);
         assertFalse(board.place(0, 0, Mark.O));
-    }
-
-    void testWinnerInRow()
-    {
-        Board board = new Board();
-        board.place(0, 0, Mark.X);
-        board.place(1, 0, Mark.X);
-        board.place(2, 0, Mark.X);
-        assertEquals(Mark.X, board.winner());
     }
 
     //tests if board is full after placing marks in every spot on the grid

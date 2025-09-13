@@ -14,6 +14,6 @@ public class RandomStrategy implements MoveStrategy
                 for ( int c = 0; c < 3; c++ )
                     if ( board.isEmpty(r, c))
                         moves.add(new int[] {r, c});
-                return moves.get( rng.nextInt( moves.size() ) );
+            return moves.get( rng.nextInt( moves.size() ) );
     }
 }
