@@ -39,18 +39,38 @@ public class Board
 
     public Mark winner ()
     {
-        for ( int i = 0; i < 3; i++)
-        {
-            if ( line ( grid[i][0], grid[i][1], grid[i][2]) )
-                return grid[i][0];
-            if ( line ( grid[0][i], grid[1][i], grid[2][i]) )
-                return grid[0][i];
+        // Check if there is a winner in rows
+        for (int r = 0; r < 3; r++){
+            if(grid[r][0] != Mark.EMPTY &&
+                    grid[r][0] == grid[r][1] &&
+                    grid[r][1] == grid[r][2]){
+                return grid[r][0];
+            }
         }
 
-        if ( line ( grid[0][0], grid[1][1], grid[2][2]) )
+        // Check if there is a winner in columns
+        for (int c = 0; c < 3; c++){
+            if (grid[0][c] != Mark.EMPTY &&
+                    grid[0][c] == grid[1][c] &&
+                    grid[1][c] == grid[2][c]){
+                return grid[0][c];
+            }
+        }
+
+        // Check if there is a winner in diagonals
+        // "Back" diagonal direction
+        if (grid[0][0] != Mark.EMPTY &&
+                grid[0][0] == grid[1][1] &&
+                grid[1][1] == grid[2][2]){
             return grid[0][0];
-        if ( line ( grid[0][2], grid[1][1], grid[2][0]) )
+        }
+        // "Front" diagonal
+        if (grid[0][2] != Mark.EMPTY &&
+                grid[0][2] == grid[1][1] &&
+                grid[1][1] == grid[2][0]){
             return grid[0][2];
+        }
+        // Else no winner
         return Mark.EMPTY;
     }
 
